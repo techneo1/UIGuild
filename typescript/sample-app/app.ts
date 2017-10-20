@@ -96,6 +96,7 @@ let complexObj1: { data: number[], output: (all: boolean) => number[]};
 complexObj1 = {
     data: [10, 20],
     output: function (all: boolean): number[] { 
+        all = true;
         return this.data;
     }
 }
@@ -106,6 +107,7 @@ type Complex = { data: number[], output: (all: boolean) => number[] };
 let complexObj2: Complex = {
     data: [10, 20],
     output: function (all: boolean): number[] { 
+        all = true;
         return this.data;
     }
 } 
@@ -137,3 +139,12 @@ canBeNull2 = null;
 
 let canThisBeAny = null;    // => let canThisBeNull: null = null
 // canThisBeAny = 12;      // Because is treated as type now, as strictNullChecks = true
+
+// With strictNullChecks and noU
+// function controleMe(isTrue: boolean, somethingElse: boolean){
+//     let result: number;
+//     if(isTrue){
+//         result = 2;
+//     }
+//     return result; // throws Error
+// }
