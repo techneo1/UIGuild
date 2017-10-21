@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "build/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -70,38 +70,9 @@
 "use strict";
 
 
-var _sum = __webpack_require__(1);
-
-var _sum2 = _interopRequireDefault(_sum);
-
-__webpack_require__(2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-console.log((0, _sum2.default)(5, 10));
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
-var sum = function sum(x, y) {
-  return x + y;
-};
-
-exports.default = sum;
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
 
 var _big = __webpack_require__(3);
 
@@ -119,11 +90,56 @@ window.onload = function () {
     var smallImage = document.createElement('img');
     smallImage.src = _small2.default;
     document.body.appendChild(smallImage);
+};
 
+exports.default = function () {
     var bigImage = document.createElement('img');
     bigImage.src = _big2.default;
     document.body.appendChild(bigImage);
 };
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _sum = __webpack_require__(2);
+
+var _sum2 = _interopRequireDefault(_sum);
+
+__webpack_require__(0);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log((0, _sum2.default)(5, 10));
+
+var button = document.createElement('button');
+button.innerText = 'Click';
+button.onclick = function () {
+    new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, 0)).then(function (module) {
+        console.log(module);
+        module.default();
+    });
+};
+document.body.appendChild(button);
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var sum = function sum(x, y) {
+  return x + y;
+};
+
+exports.default = sum;
 
 /***/ }),
 /* 3 */
