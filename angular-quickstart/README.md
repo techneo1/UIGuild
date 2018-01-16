@@ -41,5 +41,15 @@ ng new angular-quickstart
 cd angular-quickstart
 ng serve --open
 
+------------------------------------------
+THE APPLICATION SHELL
+------------------------------------------
 >> Angular CLI project is the foundation for both quick experiments & enterprise solutions
+
+Install the Angular CLI
+Create a new application 
+Serve the application
+Angular Components
+Change the application title
+Add application styles
 
