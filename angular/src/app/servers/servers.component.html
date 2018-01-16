@@ -3,11 +3,15 @@
     class="form-control" 
     (input)="onUpdateServerName($event)"/> -->
 
+<!-- 1. Two way data binding using ngModel -->
 <input type="text"
 class="form-control"
 [(ngModel)]="serverName">    
-<p>{{serverName}}</p>
+<!-- <p>{{serverName}}</p> -->
 
+<!-- 2. Property binding to disable/enable the button -->
+<!-- 3. Event binding for button click -->
+<!-- 4. String Interpolation to display Server Creation Status -->
 <button class="btn btn-primary"
     [disabled]="!allowNewServer"
     (click)="onCreateServer()">Add New Server</button>
