@@ -34,8 +34,8 @@ Databinding = Communication
 
 Output data >>
 ----------------------------------------------
-String Interpolation    {{data}}
-Property binding        [property]="data"
+String Interpolation    {{data}}            works in normal templates
+Property binding        [property]="data"   works in expression
 
 React to (User) Events >>
 ----------------------------------------------
@@ -44,3 +44,6 @@ Event Binding           (event)="expression"
 Combination of both >>>
 ----------------------------------------------
 Two-way data binding    [(ngModel)]="data"
+
+
+
