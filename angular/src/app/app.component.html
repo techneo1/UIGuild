@@ -20,6 +20,7 @@
 
 
     <!-- Assignment 2 - Data binding -->
+    <hr/>
     <div class="row">
          <label>Username</label>
          <input type="text" 
@@ -29,6 +30,19 @@
          <button class="btn btn-primary"
          [disabled]="username === ''"
          (click)="username = ''">Reset User</button>
+    </div>
+
+    <!-- Assignment 3 - Directives  -->
+    <hr/>
+    <div class="row">
+        <button class="btn btn-primary"
+        (click)='onToggleDisplyDetails($event)'>Display Details</button>
+        <p *ngIf="showDetails">Secret Password = tuna</p>
+        <p>Log details</p>
+        <div 
+        *ngFor="let logMessage of logMessages; let i = index"
+        [ngStyle]="{backgroundColor: i > 5? 'blue': 'orange'}"
+        [ngClass]="{'white-text': i > 5}">{{logMessage}}</div>
     </div>
 
 </div>
