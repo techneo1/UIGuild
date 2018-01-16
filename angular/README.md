@@ -45,5 +45,8 @@ Combination of both >>>
 ----------------------------------------------
 Two-way data binding    [(ngModel)]="data"
 
-
+How to get list of bindable properties and events for an element?
+>>> console.log(element);
+OR
+Inspect the element in the Chrome console and check Event listeners and Properties tabs
 
