@@ -50,3 +50,13 @@ How to get list of bindable properties and events for an element?
 OR
 Inspect the element in the Chrome console and check Event listeners and Properties tabs
 
+
+Directives V/S Components
+----------------------------------------------
+Directives 
+    - Instructions in the DOM without templates
+    - Attribute 
+Component 
+    - Directives without templates
+    - Element 
+
