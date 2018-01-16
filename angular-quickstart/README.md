@@ -91,3 +91,11 @@ The user can select a hero and see that hero's details.
 You used *ngFor to display a list.
 You used *ngIf to conditionally include or exclude a block of HTML.
 You can toggle a CSS style class with a class binding.
+
+
+------------------------------------------
+Master/Detial Components
+------------------------------------------
+You created a separate, reusable HeroDetailComponent.
+You used a property binding to give the parent HeroesComponent control over the child HeroDetailComponent.
+You used the @Input decorator to make the hero property available for binding by the external HeroesComponent.
