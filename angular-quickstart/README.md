@@ -41,3 +41,5 @@ ng new angular-quickstart
 cd angular-quickstart
 ng serve --open
 
+>> Angular CLI project is the foundation for both quick experiments & enterprise solutions
+
