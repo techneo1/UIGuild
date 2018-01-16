@@ -25,3 +25,19 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+===============
+Instructions
+===============
+
+1. Set up the Development Environment
+Install latest Nodejs, npm and Angular CLI
+npm install -g @angular/cli
+
+2. Create a new project
+ng new angular-quickstart
+
+3. Serve the application
+cd angular-quickstart
+ng serve --open
+
