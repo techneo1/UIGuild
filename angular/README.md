@@ -60,3 +60,9 @@ Component
     - Directives without templates
     - Element 
 
+Structural and Attribute directives
+----------------------------------------------
+Structural directive - Add or remove elements in the DOM.
+Ex: ngIf
+Attribute directive - Don't Add/Remove elements, instead only change the element they were placed on.
+Ex: ngStyle
