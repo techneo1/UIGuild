@@ -53,3 +53,20 @@ Angular Components
 Change the application title
 Add application styles
 
+------------------------------------------
+The Hero Editor
+------------------------------------------
+Create the heroes component 
+- Add a hero property
+- Show the hero
+Show the HeroesComponent view
+Create a Hero class
+Show the hero object
+Format with the UppercasePipe
+Edit the hero
+- Two-way binding
+- The missing FormsModule
+AppModule
+- Import FormsModule
+- Deckare HeroesComponent
+
