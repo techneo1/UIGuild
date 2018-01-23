@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { ClickMeComponent } from './user-input/click-me/click-me.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ClickMeComponent
   ],
   imports: [
     BrowserModule
