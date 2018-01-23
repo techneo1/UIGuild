@@ -15,8 +15,10 @@ export class KeyupComponent implements OnInit {
   ngOnInit() {
   }
 
-
-  onKey(event) {
-      this.values += event.target.value + '|';
+  // Passing $event is a dubious practice:
+  // It breaks the separation of concerns b/s the template and the component
+  onKey(event: KeyboardEvent) {
+      // this.values += event.target.value + '|';
+      this.values += (<HTMLInputElement>event.target).value + '|';
   }
 }
