@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-click-me',
   template: `
-        <h1>app-click-me component</h1>
+        <h3>1. Binding to user inout events</h3>
         <button (click)="onClickMe()">Click Me!</button>
         {{ clickMessage }}
   `
